@@ -1,0 +1,62 @@
+@use './scss/partials/media-queries.scss' as q;
+h1 {
+  color: red;
+  text-align: center;
+}
+
+main {
+  width: 90%;
+  margin: auto;
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@include q.tablet {
+  h1 {
+    color: blue;
+  }
+  main {
+    width: 80%;
+  }
+  p {
+    font-size: 1.25em;
+  }
+}
+
+@include q.large-tablet {
+  h1 {
+    color: green;
+  }
+  main {
+    width: 75%;
+  }
+  p {
+    font-size: 1.5em;
+  }
+}
+@include q.laptop {
+  h1 {
+    color: purple;
+    font-size: 2.25em;
+  }
+  main {
+    width: 70%;
+  }
+  p {
+    font-size: 1.75em;
+  }
+}
+@include q.desktop {
+  h1 {
+    color: orange;
+    font-size: 2.5em;
+  }
+  main {
+    width: 65%;
+  }
+  p {
+    font-size: 2em;
+  }
+}
